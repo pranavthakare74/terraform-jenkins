@@ -30,7 +30,7 @@ resource "aws_eks_node_group" "nodes" {
     min_size     = 1
   }
 
-  instance_types = ["t3.medium"]
+  instance_types = ["c7i-flex.large"]
 
   capacity_type = "ON_DEMAND"
 
